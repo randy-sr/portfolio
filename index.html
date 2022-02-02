@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <meta name="author" content="Randy Sierra Romero">
+    <meta name="description" content="Web Personal, curriculum vitae, proyectos web, frontend developer">
+    <meta name="keywords" content="desarrollador web, programacion web, portafolio, proyectos web, linkedin, web personal"/>
+    <title>Randy Sierra | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31f8af4883.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <span >
+                &lt;
+                <span class="logo_1">Randy</span>
+                <span class="logo_2">Dev</span>
+                /&gt
+            </span>
+            
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#about"">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h3>Hi , my name is</h3>
+        <h1>Randy Sierra.</h1>
+        <span class="descripcion_1">I build things for the web.</span><br>
+        <span class="descripcion_2">I am a Frontend Developer in Madrid, Spain. Currently i work on proyects using latest technologies like HTML5, CSS3 , JavaScript , and Frameworks like Bootstrap, React and preprocessors as Sass.</span><br>
+        <a id="descargarCV" href="#" onclick="downloadCV()">Download my CV</a>
+    </main>
+
+    <section id="about">
+        <h1>about</h1>
+        <div class="about_content">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis assumenda illum quaerat necessitatibus veniam dolores magnam commodi minima numquam qui voluptas dolorem sapiente explicabo in quae eveniet nemo nulla ullam corporis laboriosam quibusdam maiores, aperiam ea accusantium? Libero dolor quia quod, odio officiis tempore obcaecati.</span>
+        </div>
+        <div class="about_foto">
+            <img src="imagenes/profile.jpg" alt="Randy">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects_container">
+            <div class="card">
+                <img src="imagenes/weatherApp2.PNG" alt="weather-app">
+                <h3>Weather App</h3>
+                <a href="https://rsrweather-app.netlify.app" target="_blank"/>See More</a>
+            </div>
+            <div class="card">
+                <img src="imagenes/gif-app.PNG" alt="gif-react-app">
+                <h3>Gif Expert App</h3>
+                <a href="https://randy-gif-app.herokuapp.com" target="_blank">See More</a>
+            </div>
+            <div class="card">
+                <img src="imagenes/blogcafe.PNG" alt="blog de café">
+                <h3>Blog Café</h3>
+                <a href="https://randyblogcafe.netlify.app" target="_blank">See More</a>
+            </div>
+            <div class="card">
+                <img src="imagenes/frontstore.PNG" alt="shirt frontend store">
+                <h3>Frontend Store</h3>
+                <a href="https://randyfrontendstore.netlify.app" target="_blank">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills_box">
+            <div class="icono">
+                <i class="fab fa-html5"></i>
+            </div>
+            <div class="icono">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="icono">
+                <i class="fab fa-bootstrap"></i>
+            </div>
+            <div class="icono">
+                <i class="fab fa-js-square"></i>
+            </div>
+            <div class="icono">
+                <i class="fab fa-react"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="form"  action="javascript:send()">
+            <div class="flex">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="write your name*" required>
+            </div>
+            <div class="flex">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="write your email*" required>
+            </div>
+            <div class="flex">
+                <label for="message">Message:</label>
+                <textarea name="message" id="mssg" cols="30" rows="10" placeholder="write your message*" required></textarea>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="Send"></input>
+            </div>
+
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="contact-info">
+            <div class="numero-tlf">
+                <h3>Movile Number:</h3>
+                <span>+34 600273005</span>
+            </div>
+            <div class="email">
+                <h3>Email:</h3>
+                <span>randysr2803@gmail.com</span>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/randy-sierra-romero-a341381bb/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a> 
+            </div>
+            <div class="github">
+                <a href="https://github.com/randy-sr" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a> 
+            </div>
+        </div>
+
+        <div class="footer-logo">
+            <span >
+                &lt;
+                <span class="logo_1">Randy</span>
+                <span class="logo_2">Dev</span>
+                /&gt;
+            </span>
+            
+        </div>
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
