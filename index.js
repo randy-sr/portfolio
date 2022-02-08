@@ -44,8 +44,9 @@ function downloadCV() {
 let send = () => {
 
     let email; 
-    let box, content, form, redbox;
-    redbox = new Array();
+    let box, content, form, redbox,btn;
+    
+    btn = document.getElementById("input-submit");
 
     email = document.getElementById("email").value;
     box = document.createElement("div");
@@ -66,7 +67,6 @@ let send = () => {
         redbox = form.appendChild(box);
     }
     else {
-
         content = document.createTextNode("Enviado");
         box.appendChild(content);
         box.style.backgroundColor = "#2ecc71";
@@ -75,10 +75,14 @@ let send = () => {
         box.style.padding = "10px 0px";
         box.style.width = "250px";
         box.style.margin = "0 auto";
-
         form = document.getElementById("form");
         form.appendChild(box); 
+        btn.desabled = true;
     }
+
+    setTimeout(function() {
+        form.removeChild(box);
+    },3000);
 
     
 }
