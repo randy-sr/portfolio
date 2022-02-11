@@ -44,9 +44,7 @@ function downloadCV() {
 let send = () => {
 
     let email; 
-    let box, content, form, redbox,btn;
-    
-    btn = document.getElementById("input-submit");
+    let box, content, form;
 
     email = document.getElementById("email").value;
     box = document.createElement("div");
@@ -64,7 +62,7 @@ let send = () => {
         box.style.margin = "0 auto";
 
         form = document.getElementById("form");
-        redbox = form.appendChild(box);
+        form.appendChild(box);
     }
     else {
         content = document.createTextNode("Enviado");
@@ -77,7 +75,6 @@ let send = () => {
         box.style.margin = "0 auto";
         form = document.getElementById("form");
         form.appendChild(box); 
-        btn.desabled = true;
     }
 
     setTimeout(function() {
