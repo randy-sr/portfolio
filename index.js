@@ -36,7 +36,7 @@ window.addEventListener("scroll", function() {
 
 // descargar mi cv
 function downloadCV() {
-    window.open("docs/RANDY SIERRA ENGLISH CV.pdf");
+    window.open("docs/myCv.pdf");
 }
 
 
